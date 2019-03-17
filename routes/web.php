@@ -15,3 +15,9 @@ Route::view('/', 'welcome');
 Route::get('/books', 'BookController@index');
 
 Route::get('/books/{title}', 'BookController@show');
+
+
+/**
+ * Practice
+ */
+Route::any('/practice/{n?}', 'PracticeController@index');
